@@ -1,0 +1,102 @@
+.menu-button {
+    margin: 15px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 2;
+}
+
+.menu-button__bar {
+    border-radius: 2px;
+    margin: 6px 6px;
+    width: 30px;
+    height: 4px;
+    background-color: var(--rwhite)
+}
+
+.menu-button:hover .menu-button__bar {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.menu-overlay{
+    border: 2px solid rgba(19, 19, 19, 1);
+    border-radius: 7px;
+    width: 120px;
+    height: 150px;
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+    background: rgba(255, 255, 255, 1);
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 500ms;
+}
+
+.menu-overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: color 200ms;
+    color: var(--rblack);
+}
+
+.menu-overlay .close{
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    left: 5px;
+    top: 0px;
+}
+
+.close h1{
+    font-weight: 600;
+    position: absolute;
+    left: 16px;
+    top: 6px;
+    font-size: 15px;
+}
+
+.menu-overlay .close:hover {
+    color: rgb(53, 97, 226);
+}
+
+.menu-overlay__button:hover {
+    transition: color 300ms;
+    color: royalblue;
+}
+.menu-overlay__menu-box {
+    margin-top: 18px;
+    width: 104px;
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-overlay__button {
+    color: rgba(19, 19, 19, 0.8);
+    margin: 10px;
+}
+
+.nav-notification {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    right: 32px;
+    top: 49px;
+}
+
+
+.menu-overlay__button {
+    font-size: 15px;
+}
+

@@ -1,0 +1,21 @@
+.badge {
+    background-color: royalblue;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--lwhite);
+    font-weight: 600;
+}
+
+.point {
+    border-radius: 50%;
+    position: absolute;
+    background-color: royalblue;
+    width: 5px;
+    height: 5px;
+    top: 20px;
+    right: 20px;
+}
