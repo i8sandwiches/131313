@@ -1,0 +1,28 @@
+@keyframes circleRotate {
+    25% {
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(180deg);
+    }
+
+    100% {
+        transform:rotateZ(180deg);
+    }
+
+}
+
+.circle {
+    margin: 7px;
+    background-color: white;
+    height: 8px;
+    width: 8px;
+    border-radius: 10px;
+}
+
+.container-circle {
+    position: fixed;
+    bottom: 80px;
+    display: flex;
+    animation: circleRotate 1s ease-in-out infinite;
+}
